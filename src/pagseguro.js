@@ -199,7 +199,7 @@ pagseguro.prototype.transactionStatus = function(code, cb) {
  */
 pagseguro.prototype.notificationStatus = function(notificationCode, cb) {
     /**https://ws.pagseguro.uol.com.br/v3/transactions/notifications/ */
-    request.get({ url: this.url + '/transactions/notifications' + code + '?token=' + this.token + '&email=' + this.email }, function(err, response, body) {
+    request.get({ url: this.url + '/transactions/notifications/' + notificationCode + '?token=' + this.token + '&email=' + this.email }, function(err, response, body) {
         if (err) {
             return cb(err, false);
         } else if (response.statusCode === 200) {
