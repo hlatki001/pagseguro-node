@@ -95,7 +95,7 @@ pagseguro.prototype.sendTransaction = function(transaction, cb) {
         this.checkoutData.reference = transaction.reference;
     }
 
-    if (transaction.noInterestInstallmentQuantity && transaction.noInterestInstallmentQuantity > 1) {
+    if (transaction.noInterestInstallmentQuantity && transaction.noInterestInstallmentQuantity > 0) {
         this.checkoutData.noInterestInstallmentQuantity = transation.noInterestInstallmentQuantity;
     }
 
