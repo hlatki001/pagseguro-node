@@ -1,6 +1,6 @@
 {
     "name": "node-pagseguro2",
-    "version": "0.3.2",
+    "version": "0.3.3",
     "main": "index.js",
     "description": "Integração PagSeguro UOL com checkout transparente para servidores backend",
     "keywords": [
